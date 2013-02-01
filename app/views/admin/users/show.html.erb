@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+	<div>Email<br/>
+		<%= @admin_user.email %></div>
+  <div>Role<br/>
+	<% for role in Role.all %>
+	<div>
+	  <%= check_box_tag "user[role_ids][]", role.id, @admin_user.roles.include?(role), :disabled =>true %>
+	  <%=h role.name %>
+	</div>
+	<% end %>
+	<%#= hidden_field_tag "user[role_ids][]", "" %>
+  </div>
+
+<%= link_to 'Edit', edit_admin_user_path(@admin_user) %> |
+<%= link_to 'Back', admin_users_path %>

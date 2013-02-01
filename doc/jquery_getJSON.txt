@@ -1,0 +1,42 @@
+$(document).ready(function () {
+  // start Ajax call
+  $.getJSON('data/contacts.json', function (data) {
+    var addrBook = data.addressBook,
+      count = addrBook.length;
+    // clear the target area just in case there's something in it.
+    $('#output').empty();
+    // check the count, of course
+    if (count > 0) {
+      console.log(addrBook);
+    } // end count check
+  }); // end ajax call
+}); // close document.ready
+
+// Listing 10.3.3 Chaining Functions with Ajax Methods
+
+$(document).ready(function () {
+// start Ajax call
+$.getJSON('data/contacts.json', function (data) {
+var addrBook = data.addressBook,
+count = addrBook.length;
+// clear the target area just in case there's something in it.
+$('#output').empty();
+// check the count, of course
+if (count > 0) {
+// loop through the contacts
+$.each(addrBook, function (i, obj) {
+$('#output').append('<p>' + obj.name + ', <a href="mailto:' +obj.email + '">'+ obj.email +'</a><p>').hide().fadeIn();
+
+}); // end each
+} // end count check
+}).error(function () {
+// if there was an error during the ajax call
+alert('there was an ajax error');
+}).complete(function () {
+// if the ajax call completed (whether it was successful or not)
+alert('your ajax call was completed');
+}).success(function(){
+// if the ajax call was a success
+alert('your ajax call was a success');
+}); // end ajax call
+}); // close document.ready

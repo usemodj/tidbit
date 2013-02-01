@@ -1,0 +1,29 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<script>
+$(document).ready(function () {
+  // start Ajax call
+  //$.getJSON('home/index.json', function (data) {
+  $.post('/home/index.json', function (data) {
+  	alert(data.app);
+   console.log(data);
+   
+  }); // end ajax call
+
+/*  
+  $.jsonp({ url: '/home/index.json',
+    success: function (json, textStatus, xOptions) {
+	  // the xOptions object or xOptions.context if provided
+	  console.log(json);
+	  console.log(textStatus);
+	  console.log(JSON.stringify(xOptions));
+	}, 
+  	complete: function(xOptions, textStatus){
+  		console.log(textStatus);
+  		alert(JSON.stringify(xOptions));
+  	}
+  });
+*/
+ 
+}); // close document.ready
+</script>

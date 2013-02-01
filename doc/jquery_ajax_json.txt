@@ -1,0 +1,17 @@
+$(document).ready(function () {
+  $.ajax({
+    type: 'GET', // set request type GET or POST
+    url: 'home/index.json', // data URL
+    dataType: 'json', // type: xml, json, script, or html
+    success: function (data) {
+      // if the call is a success do this
+      console.log(data);
+      alert(data);
+    },
+    error: function () {
+      // if the call fails do this
+      alert('an ajax error occurred');
+    }
+  }); // end Ajax call
+}); // close document.ready
+

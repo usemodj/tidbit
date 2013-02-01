@@ -1,0 +1,2932 @@
+/* global */
+body {
+    background-color: #fff;
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+}
+body, select {
+    font-family: Tahoma, sans-serif;
+}
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, form, p {
+    margin: 0px;
+    padding: 0px;
+}
+#body {
+    background-color: #d3d3d5;
+    margin: 0px auto;
+    padding: 0px 20px;
+    position: relative;
+    width: 956px;
+}
+#main {
+    padding: 100px 0px 120px;
+}
+#page-content {
+    padding: 10px 0px;
+    position: relative;
+}
+img {
+    color: #615c5c;
+    font-size: 12px;
+    text-decoration: none;
+}
+.image a {
+    text-decoration: none;
+}
+a img {
+    border: 0px;
+}
+input[type=text] {
+    border: 1px solid black;
+}
+.sitetext {
+    color: black;
+}
+.clearfloat {
+    display: inline-block;
+}
+/* header-footer */
+#header {
+    font-size: 0.75em;
+    height: 16px;
+    padding: 11px 20px 4px;
+    text-align: right;
+    top: 0px;
+    width: 956px;
+    z-index: 100;
+}
+#header, #footer {
+    background: white;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+}
+#header, #header a, #footer, #footer a {
+    color: #3b3434;
+}
+#header #customerName {
+    font-weight: bold;
+    padding-right: 5px;
+}
+#header .links, #header .links li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#header .links a, #footer .links a {
+    text-decoration: none;
+}
+#header .links a:hover, #footer .links a:hover {
+    text-decoration: underline;
+}
+#footer {
+    bottom: 0px;
+    font-size: 0.6875em;
+    height: 85px;
+    padding: 25px 46px 10px;
+    text-align: center;
+    width: 904px;
+}
+#footer .follow-us {
+    float: left;
+    height: 70px;
+    width: 167px;
+}
+#footer .follow-us div {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#footer .follow-us img {
+    height: 17px;
+    width: 17px;
+}
+#footer .links, #footer .links li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#footer .links li {
+    display: inline;
+    float: left;
+    margin-bottom: 2px;
+    text-align: left;
+    width: 122px;
+}
+#footer .links .col2 {
+    width: 158px;
+}
+#footer .links .col3 {
+    width: 107px;
+}
+#footer .links .col4 {
+    width: 105px;
+}
+#footer .links .col1.span3 {
+    width: 480px;
+}
+#footer .copyright {
+    clear: both;
+}
+#footer .footer-images {
+    float: right;
+    height: 70px;
+}
+#footer .mobile {
+    padding-right: 30px;
+}
+#footer .blog {
+    padding-right: 85px;
+}
+#footer .footer-text {
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+#footer .footer-images a {
+    text-decoration: none;
+}
+/* top-nav */
+#topnav {
+    background: white;
+    color: black;
+    height: 34px;
+    left: 0px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 31px;
+    width: 956px;
+    z-index: 550;
+}
+#topnav #logo {
+    font-size: 1em;
+    padding: 1px;
+}
+#topnav #logo a {
+    background-repeat: no-repeat;
+    color: black;
+    display: block;
+    height: 28px;
+    text-decoration: none;
+    width: 198px;
+}
+#topnav #logo a span {
+    visibility: hidden;
+}
+#topnavLogo {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/logo._V184078047_.png");
+}
+#top-nav-msg {
+    display: none;
+    float: right;
+    height: 24px;
+    position: relative;
+    right: -20px;
+    z-index: 450;
+}
+#top-nav-msg a {
+    text-decoration: none;
+}
+#top-nav-msg h2 {
+    background-color: black;
+    color: #fff;
+    font-size: 0.75em;
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 24px;
+    position: relative;
+}
+#top-nav-msg h2 a {
+    color: #6b1c12;
+}
+#top-nav-msg h2 span {
+    border-left: 0.2em solid #939395;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+#nav-blog-description {
+    font-size: 0.65625em;
+    padding-bottom: 15px;
+}
+#nav-blog-description .nav-description-link:hover {
+    text-decoration: none !important;
+}
+#departments {
+    background: white;
+    border-top: 1px solid #939598;
+    height: 24px;
+    left: 0px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 75px;
+    width: 430px;
+    z-index: 500;
+}
+#departments .department, #departments .department-spcl {
+    float: left;
+    position: relative;
+    top: -1px;
+    z-index: 450;
+}
+#departments .department a, #departments .department-spcl a {
+    color: #939395;
+    text-decoration: none;
+}
+#departments .department a.hover, #departments .department-spcl a.hover {
+    text-decoration: underline;
+}
+#departments .department h2, #departments .department-spcl h2 {
+    font-size: 0.875em;
+    font-weight: normal;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 450;
+}
+#departments .department h2 a, #departments .department-spcl h2 a {
+    display: block;
+    margin: 0px 0px 2px;
+    padding: 3px 7px 5px;
+}
+#departments .department .nav-link, #departments .department-spcl .nav-link {
+    font-size: 0.8125em;
+}
+#departments .department .events, #departments .department-spcl .events {
+    background-color: #bdbdbd;
+    display: none;
+    margin-top: -2px;
+    padding: 12px 0px;
+    position: absolute;
+    width: 444px;
+    z-index: 475;
+}
+#departments .department .events.one-column, #departments .department-spcl .events.one-column {
+    width: 222px;
+}
+#departments .department .events.blog-column, #departments .department-spcl .events.blog-column {
+    width: 220px;
+}
+#departments .department .events .coming-soon, #departments .department-spcl .events .coming-soon {
+    font-size: 0.8125em;
+    margin: 15px 0px 20px;
+    text-align: center;
+}
+#departments .department .events h3, #departments .department-spcl .events h3 {
+    font-size: 0.75em;
+    margin: 0px 0px 8px;
+}
+#departments .department .events .right-col, #departments .department-spcl .events .right-col {
+    float: right;
+}
+#departments .department .events .left-col, #departments .department-spcl .events .left-col {
+    float: left;
+}
+#departments .department .events .today, #departments .department .events .ending, #departments .department-spcl .events .today, #departments .department-spcl .events .ending {
+    margin: 0px;
+    padding: 0px 13px 0px 9px;
+    width: 200px;
+}
+#departments .department .events .blog, #departments .department-spcl .events .blog {
+    margin: 0px;
+    padding: 0px 13px 0px 9px;
+    width: 190px;
+}
+#departments .department .events .titled-nav-link, #departments .department-spcl .events .titled-nav-link {
+    margin: 0px;
+    padding: 0px 13px 13px 0px;
+    width: 200px;
+}
+#departments .department .events .titled-nav-link.last, #departments .department-spcl .events .titled-nav-link.last {
+    padding: 0px 13px 0px 0px;
+}
+#departments .department .events .today, #departments .department-spcl .events .today {
+    padding-bottom: 15px;
+}
+#departments .department .events .designer-popover, #departments .department-spcl .events .designer-popover {
+    padding-bottom: 0px;
+}
+#departments .department .events ul li, #departments .department-spcl .events ul li {
+    font-size: 0.65625em;
+    list-style-type: none;
+    padding: 0px 0px 4px 9px;
+    text-indent: -9px;
+}
+#departments .department .events a:hover, #departments .department-spcl .events a:hover {
+    text-decoration: underline;
+}
+#departments .department.selected a, #departments .department-spcl.selected a {
+    color: black;
+}
+#departments .department.hover, #departments .department-spcl.hover {
+    z-index: 475;
+}
+#departments .department.hover a, #departments .department-spcl.hover a {
+    color: black;
+}
+#departments .department.hover h2, #departments .department-spcl.hover h2 {
+    background-color: #bdbdbd;
+    z-index: 500;
+}
+#departments .department.hover .events, #departments .department-spcl.hover .events {
+    display: block;
+}
+#departments .department-spcl h2 {
+    text-transform: none !important;
+}
+#topnav #cart {
+    bottom: 0px;
+    color: black;
+    font-size: 0.9375em;
+    height: 39px;
+    position: absolute;
+    right: 20px;
+    width: 73px;
+}
+#topnav #cart .cart-button {
+    background-color: white;
+    float: right;
+    height: 30px;
+    padding: 7px 10px 2px 0px;
+    position: relative;
+    text-align: right;
+    width: 63px;
+    z-index: 600;
+}
+#topnav #cart.hover .cart-button {
+    background-color: #bdbdbd;
+}
+#topnav #cart .your-cart {
+    display: block;
+    line-height: 1.2;
+}
+#topnav #cart .item-count {
+    display: block;
+    font-size: 0.7333em;
+    line-height: 1;
+    white-space: nowrap;
+}
+#topnav #cart #selectblocker, #topnav #cart .dropdown {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 39px;
+}
+#topnav #cart .dropdown {
+    background-color: #bdbdbd;
+    padding: 10px;
+    z-index: 550;
+}
+#topnav #cart #selectblocker {
+    z-index: 549;
+}
+#topnav #cart.hover #selectblocker, #topnav #cart.hover .dropdown {
+    display: block;
+}
+#topnav #cart .items {
+    max-height: 435px;
+    overflow-x: hidden;
+    overflow: auto;
+}
+#topnav #cart .items a {
+    color: black;
+}
+#topnav #cart .items .empty {
+    display: none;
+    margin: 34px 34px 44px;
+    text-align: center;
+}
+#topnav #cart .items .cart-actions {
+    border-top: 1px solid #939598;
+    text-align: right;
+    width: 756px;
+}
+#topnav #cart .cart-actions-top {
+    border-bottom: 1px solid #939598;
+    text-align: right;
+    width: 756px;
+}
+#topnav #cart .items .cart-actions.spacer {
+    border-bottom: 1px solid #939598;
+    margin-bottom: 6px;
+    padding-bottom: 18px;
+}
+#topnav #cart .cart-actions-top #cartCheckoutButtonTop, #topnav #cart .items .cart-actions #cartCheckoutButton {
+    background-color: transparent;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/inline_cart_place_order._V182768645_.jpg");
+    background-repeat: no-repeat;
+    border: 0px;
+    display: block;
+    height: 20px;
+    margin: 0px 0px 0px 670px;
+    width: 86px;
+}
+#topnav #cart .items, #topnav #cart .headers {
+    width: 780px;
+}
+#topnav #cart .headers {
+    margin: 5px 0px -2px 0px;
+}
+#topnav #cart .headers span {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+#topnav #cart .headers .prod-title {
+    margin-left: 62px;
+}
+#topnav #cart .state .updateFailure {
+    font-size: 0.9231em;
+    padding-top: 6px;
+}
+#topnav #cart .quantity, #topnav #cart .price, #topnav #cart .remove {
+    text-align: center;
+}
+#topnav #cart .prod-title {
+    overflow: hidden;
+    width: 213px;
+}
+#topnav #cart .delivery {
+    width: 127px;
+}
+#topnav #cart .quantity {
+    width: 56px;
+}
+#topnav #cart .price {
+    width: 60px;
+}
+#topnav #cart .state {
+    width: 128px;
+}
+#topnav #cart .remove {
+    padding-right: 0px;
+    width: 50px;
+}
+#topnav #cart .headers span {
+    display: inline-block;
+    padding: 0px 5px;
+    vertical-align: top;
+}
+#topnav #cart .item {
+    font-size: 0.8667em;
+    padding: 6px 0px;
+}
+#topnav #cart .item .prod-title, #topnav #cart .item .delivery, #topnav #cart .item .quantity, #topnav #cart .item .price, #topnav #cart .item .state, #topnav #cart .item .remove, #topnav #cart .item .item-img {
+    display: inline-block;
+    padding: 0px 5px;
+    vertical-align: top;
+}
+#topnav #cart .unavailable {
+    background: #e0e0e0;
+}
+#topnav #cart .item .item-img {
+    margin-right: 5px;
+    padding: 3px 0px 0px;
+    text-align: center;
+    width: 57px;
+}
+#topnav #cart .item .prod-title .title {
+    display: block;
+    overflow: hidden;
+}
+#topnav #cart .item .prod-title.vardata1 .title {
+    max-height: 55px;
+}
+#topnav #cart .item .prod-title.vardata2 .title {
+    max-height: 36px;
+}
+#topnav #cart .item .prod-title.vardata3 .title {
+    max-height: 26px;
+    white-space: nowrap;
+}
+#topnav #cart .item .prod-title .vardatum {
+    font-size: 0.9231em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#topnav #cart .item .prod-title .vardatum .key {
+    text-transform: capitalize;
+}
+#topnav #cart .item .estimated-delivery {
+    display: block;
+    font-size: 0.9231em;
+    font-weight: bold;
+}
+#topnav #cart .item .remove .remove-button {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/remove._V170364908_.png");
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    padding: 2px;
+    width: 13px;
+}
+#topnav #cart .item .state .time-expired {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+#topnav #cart .item .state .move-to-waitlist {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.holidayRed {
+    color: #a80303;
+}
+.grayLink {
+    color: #7a7778;
+}
+.emergencyText {
+    font-weight: bold;
+}
+#nav-message-slot {
+    background-color: white;
+    border-top: 1px solid #939598;
+    font-size: 13px;
+    height: 22px;
+    left: 456px;
+    padding-right: 30px;
+    padding-top: 2px;
+    position: absolute;
+    text-align: right;
+    top: 75px;
+    width: 510px;
+    z-index: 500;
+}
+/* unwalled */
+#topnav #logo {
+    float: left;
+    width: 600px;
+}
+#topnav #joinNowHeader {
+    float: right;
+    text-align: right;
+    width: 354px;
+}
+#topnav #joinNowHeader .joinNowArrow {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    text-decoration: none;
+    width: 354px;
+}
+#topnav #joinNowHeader .joinNowArrow span {
+    visibility: hidden;
+}
+#topnav #joinNowHeader .joinNowText {
+    color: #000;
+    font-size: 11px;
+    margin-left: 9px;
+}
+#topnav #joinNowHeader .joinNowText a {
+    color: #7a7778;
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: underline;
+}
+#ap_container .signinStripePopup {
+    background: white;
+    height: 95px;
+    left: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+}
+#ap_container .signinStripePopup .ap_content {
+    font-size: 13px;
+    margin: 0px auto;
+    padding-top: 17px !important;
+    text-align: right;
+    width: 956px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe div {
+    margin-left: auto;
+    margin-right: 282px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .ap_custom_close {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/close_x_btn._V387567810_.png");
+    cursor: pointer;
+    height: 17px;
+    margin-left: 905px;
+    margin-top: -34px;
+    position: absolute;
+    width: 51px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .joinNowHeadline {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/join_now_headline_arrow._V385918222_.png");
+    cursor: pointer;
+    height: 16px;
+    margin-bottom: 6px;
+    width: 394px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .joinNowHeadline span {
+    visibility: hidden;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .joinNowMessage {
+    margin-bottom: 10px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .joinNowSignin {
+    font-size: 11px;
+}
+#ap_container .signinStripePopup .ap_content .centeredStripe .joinNowSignin a {
+    color: #7a7778;
+    text-decoration: underline;
+}
+/* loading */
+#loading {
+    color: white;
+    font-size: 5em;
+    height: 50px;
+    margin: 266px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50px;
+}
+#loading canvas {
+    display: block;
+}
+#loading canvas div {
+    height: 50px !important;
+    width: 50px !important;
+}
+/* gateway */
+#new-sales-alert {
+    height: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 150;
+}
+#new-sales-alert .reveal {
+    display: inline-block;
+    height: 0px;
+    overflow: hidden;
+    vertical-align: top;
+    zoom: 1;
+}
+#new-sales-alert .reveal .content {
+    background-color: #6b1c12;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 0.8125em;
+    padding: 8px 13px;
+    text-transform: uppercase;
+}
+#new-sales-alert .reveal .content:hover {
+    text-decoration: underline;
+}
+#page-content .privatesale {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 312px;
+}
+#page-content .privatesale .date, #page-content .privatesale .time {
+    text-transform: uppercase;
+}
+.ie7 #page-content .privatesale {
+    display: inline;
+    float: none;
+    vertical-align: top;
+    zoom: 1;
+}
+#page-content .privatesale .title {
+    color: #25447e;
+    text-decoration: none;
+}
+#page-content .privatesale .image {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+#page-content .privatesale .soldout {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/sold-out-large._V184204675_.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 80px;
+    z-index: 5;
+}
+#page-content .privatesale .image img {
+    display: block;
+}
+#page-content .privatesale .shoveler {
+    bottom: -104px;
+    height: 104px;
+    left: 0px;
+    overflow: visible !important;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+}
+.ie6 #page-content .privatesale .shoveler {
+    display: none;
+}
+#page-content .privatesale .shoveler .background {
+    -ms-filter: "alpha(opacity=70)";
+    background-color: black;
+    bottom: 0px;
+    filter: alpha(opacity=70);
+    left: 0px;
+    opacity: 0.7;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+#page-content .privatesale .shoveler .loading {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/shoveler-loading._V168683614_.png");
+    height: 58px;
+    margin: 0px auto;
+    position: relative;
+    top: 24px;
+    width: 500px;
+    z-index: 2;
+}
+#page-content .privatesale .shoveler-content {
+    height: 79px;
+    list-style-type: none;
+    margin: 0px 14px;
+    padding: 0px 94px 0px 38px;
+    position: relative;
+    top: 8px;
+    white-space: nowrap;
+    z-index: 2;
+}
+#page-content .privatesale .shoveler-content li {
+    list-style-type: none;
+}
+#page-content .privatesale .shoveler .item {
+    display: block;
+    float: left;
+    height: 79px;
+    width: 66px;
+}
+#page-content .privatesale .shoveler .cell {
+    background-color: white;
+    display: block;
+    left: 0px;
+    margin: 1px 4px;
+    position: relative;
+    text-decoration: none;
+    top: 0px;
+    width: 58px;
+    z-index: 5;
+}
+#page-content .privatesale .shoveler .cell:hover {
+    border: 1px solid #bbb;
+    height: 219px;
+    left: -42px;
+    margin: 0px 3px;
+    top: -129px;
+    width: 139px;
+    z-index: 10;
+}
+#page-content .privatesale .shoveler .cell.suppressed:hover {
+    height: 195px;
+}
+#page-content .privatesale .shoveler .cell img {
+    height: 77px !important;
+    width: 58px !important;
+}
+#page-content .privatesale .shoveler .cell:hover img {
+    height: 185px !important;
+    width: 139px !important;
+}
+#page-content .privatesale .shoveler .cell .magnifierHiddenContent {
+    display: none;
+    font-size: 0.8125em;
+    overflow: hidden;
+}
+#page-content .privatesale .shoveler .cell:hover .magnifierHiddenContent {
+    display: block;
+}
+#page-content .shoveler .cell .soldout {
+    top: 94px;
+}
+#page-content .privatesale .shoveler-controls {
+    color: white;
+    font-size: 0.75em;
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    white-space: normal;
+    width: 108px;
+    z-index: 2;
+}
+#page-content .privatesale .shoveler-controls .debug-info {
+    display: none;
+}
+#page-content .privatesale .shoveler-controls .scrollArrow-left, #page-content .privatesale .shoveler-controls .scrollArrow-right {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/shoveler-buttons._V168073356_.jpg");
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin: 10px 2px 0px;
+    width: 18px;
+}
+#page-content .privatesale .shoveler-controls .scrollArrow-left.active {
+    background-position: 0px -20px;
+}
+#page-content .privatesale .shoveler-controls .scrollArrow-right {
+    background-position: 0px -40px;
+}
+#page-content .privatesale .shoveler-controls .scrollArrow-right.active {
+    background-position: 0px -60px;
+}
+#page-content .privatesale .shoveler .listprice {
+    color: #575656;
+    font-size: 0.8462em;
+    text-align: center;
+    text-decoration: line-through;
+}
+#page-content .privatesale .shoveler .ourprice {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+#page-content .privatesale .caption {
+    color: #615c5c;
+    cursor: default;
+    font-size: 0.75em;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+#page-content .privatesale .caption a {
+    color: #6b1c12;
+    display: block;
+    font-size: 1.1667em;
+    text-transform: uppercase;
+}
+#page-content .privatesale.hero {
+    margin-top: 0px;
+    width: 956px;
+}
+#page-content .heroWithHolidayAds .privatesale.hero {
+    float: left;
+    margin-top: 0px;
+    width: 634px;
+}
+#page-content .heroWithHolidayAds .privatesale.hero .shoveler {
+    width: 634px;
+}
+#page-content #currentSales .clear, #page-content #salesEndingSoon .clear {
+    clear: both;
+    height: 1px;
+}
+#page-content #currentSales h3, #page-content #salesEndingSoon h3 {
+    color: black;
+    font-size: 1.3125em;
+    font-weight: normal;
+    margin: 15px 8px 5px 0px;
+    text-transform: uppercase;
+}
+#page-content #upcomingSales .salesGroupedByDate {
+    margin-bottom: 0px;
+}
+#page-content #currentSales .privatesale.hero .image img.main-image {
+    height: 439px;
+    width: 956px;
+}
+#page-content #currentSales .heroWithHolidayAds .privatesale.hero .image img.main-image {
+    height: 488px;
+    width: 634px;
+}
+#page-content #salesEndingSoon .privatesale .image img, #page-content #currentSales .privatesale .image img, #page-content .threeColumnSales .privatesale .image img {
+    height: 219px;
+    width: 312px;
+}
+#page-content .threeColumnSales .privatesale {
+    width: 312px;
+}
+#page-content .fourColumnSales .privatesale .image img {
+    height: 162px;
+    width: 231px;
+}
+#page-content .fourColumnSales .privatesale {
+    width: 231px;
+}
+#page-content .threeColumnSales, #page-content .fourColumnSales {
+    display: inline-block;
+}
+#page-content .threeColumnSales .privatesale, #page-content .fourColumnSales .privatesale {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#page-content .privatesale.first {
+    clear: left;
+    margin-left: 0px;
+}
+#page-content .privatesale.last {
+    margin-right: 0px;
+}
+#page-content #salesEndingSoon .privatesale.c0, #page-content #currentSales .privatesale.c0 {
+    clear: left;
+}
+#page-content #salesEndingSoon .privatesale.c1, #page-content #currentSales .privatesale.c1 {
+    left: 10px;
+}
+#page-content #salesEndingSoon .privatesale.c2, #page-content #currentSales .privatesale.c2 {
+    left: 20px;
+}
+#page-content .salesGroupedByDate ul {
+    color: #3c444c;
+    cursor: default;
+    font-size: 1.0625em;
+    list-style-type: none;
+    margin: 0px 0px 11px 8px;
+}
+#page-content .salesGroupedByDate ul li {
+    *display: inline;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 22px 0px 0px;
+    zoom: 1;
+}
+#page-content .salesGroupedByDate ul li span {
+    cursor: pointer;
+}
+#page-content .salesGroupedByDate ul li span:hover {
+    text-decoration: underline;
+}
+#page-content .salesGroupedByDate ul li.selected span {
+    color: #6c1f1f;
+    cursor: default;
+    font-size: 1.1765em;
+    text-decoration: none;
+}
+#endingSoonHeader {
+    padding-bottom: 12px;
+    padding-top: 17px;
+}
+#page-content .heroHolidayAdSlots {
+    float: left;
+    width: 312px;
+}
+#page-content .heroHolidayAdSlots .privatesale {
+    margin: 0px;
+}
+#page-content .heroHolidayAdSlots .privatesale .caption {
+    height: 35px;
+}
+#page-content .heroHolidayAdSlots .img {
+    border: none;
+    height: 219px;
+    width: 312px;
+}
+#page-content .heroHolidayAdSlots #heroHolidayAdSlot0 {
+    border: none;
+    float: top;
+    height: 259px;
+    margin: 0px 0px 10px 10px;
+    width: 312px;
+}
+#page-content .heroHolidayAdSlots #heroHolidayAdSlot1 {
+    border: none;
+    float: top;
+    height: 219px;
+    margin: 0px 0px 10px 10px;
+    width: 312px;
+}
+/* error */
+#errorPage p {
+    color: #6d6d6d;
+    font-size: 14px;
+    margin: 28px auto 10px;
+}
+#errorPage .content404 {
+    width: 270px;
+}
+#errorPage .content500 {
+    width: 365px;
+}
+#errorPage {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/error_page._V401265218_.jpg");
+    background-repeat: no-repeat;
+    height: 582px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 944px;
+}
+#errorPageButton {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/myhabit_homepage_bttn._V183565930_.png");
+    background-repeat: no-repeat;
+}
+#errorPageContent #errorPageButtonLink {
+    display: inline-block;
+    line-height: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 147px;
+}
+#errorPage h1 {
+    color: #3b4046;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 18px;
+}
+#errorPageContent {
+    margin-top: 30px;
+}
+#errorPageContentWrapper {
+    margin-left: 490px;
+    padding-top: 60px;
+    text-align: center;
+    width: 455px;
+}
+#errorPage a {
+    color: #3e3e3e;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/* videoPlayer */
+#video-player {
+    background-color: white;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    top: 1px;
+    width: 1px;
+    z-index: 425;
+}
+#video-player .loading {
+    bottom: 15px;
+    display: none;
+    height: 31px;
+    left: 15px;
+    position: absolute;
+    width: 31px;
+    z-index: 426;
+}
+#video-player.dpVideoShow {
+    height: 570px;
+    padding-top: 6px;
+    right: 283px;
+    top: 110px;
+    width: 430px;
+}
+#brand-video-player {
+    background-color: white;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    width: 1px;
+    z-index: 425;
+}
+#brand-video-player .loading {
+    bottom: 15px;
+    display: none;
+    height: 31px;
+    left: 15px;
+    position: absolute;
+    width: 31px;
+    z-index: 426;
+}
+#brand-video-player.dpVideoShow {
+    height: 567px;
+    left: 20px;
+    top: 86px;
+    width: 954px;
+}
+#brand-video-wrapper {
+    background-color: white;
+    height: 1px;
+    width: 0px;
+}
+#brand-video-trigger {
+    -moz-opacity: 0.7;
+    background-color: #222;
+    color: white;
+    filter: alpha(opacity=70);
+    font-size: 13px;
+    height: 22px;
+    left: 0px;
+    opacity: 0.7;
+    padding-top: 2px;
+    position: absolute;
+    text-align: center;
+    top: 196px;
+    width: 316px;
+}
+#brand-video-trigger-msg {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/vcr_arrow._V152795316_.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 193px;
+    left: 0px;
+    position: absolute;
+    width: 316px;
+}
+#video-controls {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/vcr_bar._V178338460_.png");
+    background-repeat: none;
+    display: none;
+    height: 27px;
+    margin-bottom: 8px;
+    position: relative;
+    top: 18px;
+    width: 954px;
+    z-index: 435;
+}
+#video-controls .control {
+    color: white;
+    height: 35px;
+    padding-left: 12px;
+    position: absolute;
+    width: 21px;
+}
+#video-controls .play {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/vcr_play_up._V178338460_.png");
+    background-repeat: none;
+}
+#video-controls .pause {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/vcr_pause_up._V178338463_.png");
+    background-repeat: none;
+}
+#video-controls .stop {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/vcr_stop_up._V178338463_.png");
+    background-repeat: none;
+    left: 35px;
+}
+#video-controls .progress {
+    background-color: #8a8a8a;
+    float: left;
+    height: 15px;
+    width: 0px;
+}
+#video-controls .vcLength {
+    left: 80px;
+    position: absolute;
+    top: 6px;
+    width: 862px;
+}
+/* browse */
+#upcomingSale {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/sale-starts-soon._V139193654_.jpg");
+    background-repeat: none;
+    height: 591px;
+    margin: -10px -20px;
+    width: 996px;
+}
+#upcomingSale .content {
+    height: 200px;
+    padding: 140px 140px 0px 535px;
+}
+#upcomingSale .content p {
+    margin: 10px 0px 15px;
+}
+#upcomingSale .content a {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/myhabit_homepage_bttn._V183565930_.png");
+    background-repeat: none;
+    display: block;
+    height: 0px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 147px;
+}
+#salePageImg {
+    float: left;
+}
+#salePageDescription {
+    color: #3f3f3f;
+    margin: 12px 30px 0px 334px;
+    position: relative;
+}
+#saleTitle {
+    color: #454339;
+    font-size: 2em;
+}
+#saleDescription {
+    font-size: 0.8125em;
+    line-height: 1.25;
+    margin-top: 6px;
+}
+#saleEndTime {
+    font-size: 1em;
+    margin-top: 17px;
+}
+#saleBrandLink {
+    font-size: 0.8125em;
+    margin-top: 10px;
+}
+#saleBrandLink a {
+    color: #3f3f3f;
+}
+#numResults {
+    color: #434343;
+    font-size: 0.8125em;
+}
+.three-col {
+    height: 463px;
+    margin: 0px 0px 20px;
+    padding-left: 12px;
+    width: 310px;
+}
+.three-col .evt-prdtImg-a .soldout, .three-col .evt-prdtImg-a .onhold {
+    left: 12px;
+}
+.three-col .evt-prdtImg-a .altImage {
+    left: 12px;
+}
+.three-col .evt-prdtDesc-a .title {
+    font-size: 0.75em;
+}
+.three-col .transparentClickArea {
+    height: 416px !important;
+    width: 310px !important;
+}
+.up-result {
+    height: 352px;
+    margin: 0px 0px 20px;
+    padding-left: 16px;
+    width: 227px;
+}
+.up-result .evt-prdtImg-a {
+    height: 304px;
+    width: 227px;
+}
+.up-result .evt-prdtImg-a .soldout, .up-result .evt-prdtImg-a .onhold {
+    left: 16px;
+}
+.up-result .evt-prdtImg-a .altImage {
+    left: 16px;
+}
+.up-result .evt-prdtDesc-a .title {
+    font-size: 0.6875em;
+}
+#asinbox ul {
+    list-style: none outside none;
+    margin: 0px 0px 16px;
+}
+#asinbox ul .result-col-one {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+#asinbox ul .result-col-one .soldout, #asinbox ul .result-col-one .onhold, #asinbox ul .result-col-one .altImage {
+    left: 0px !important;
+}
+#asinbox ul .result, #asinbox ul .up-result {
+    float: left;
+    position: relative;
+}
+#asinbox ul .result a, #asinbox ul .up-result a {
+    text-decoration: none;
+}
+#asinbox ul .result a:hover .title, #asinbox ul .up-result a:hover .title {
+    text-decoration: underline;
+}
+#asinbox ul .result .evt-prdtImg-a, #asinbox ul .up-result .evt-prdtImg-a {
+    display: block;
+}
+#asinbox ul .result .evt-prdtImg-a .soldout, #asinbox ul .result .evt-prdtImg-a .onhold, #asinbox ul .up-result .evt-prdtImg-a .soldout, #asinbox ul .up-result .evt-prdtImg-a .onhold {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 37px;
+    z-index: 300;
+}
+#asinbox ul .result .evt-prdtImg-a .soldout, #asinbox ul .up-result .evt-prdtImg-a .soldout {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/sold-out-large._V184204675_.png");
+    height: 18px;
+    width: 80px;
+}
+#asinbox ul .result .evt-prdtImg-a .onhold, #asinbox ul .up-result .evt-prdtImg-a .onhold {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/InMemberCart._V158550443_.png");
+    height: 29px;
+    width: 80px;
+}
+#asinbox ul .result .evt-prdtImg-a .moreColors, #asinbox ul .up-result .evt-prdtImg-a .moreColors {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/more-colors._V182886594_.png");
+    background-repeat: no-repeat;
+    bottom: 56px;
+    height: 17px;
+    position: absolute;
+    right: 6px;
+    width: 33px;
+    z-index: 300;
+}
+#asinbox ul .result .evt-prdtImg-a img, #asinbox ul .up-result .evt-prdtImg-a img {
+    border: none;
+}
+#asinbox ul .result .evt-prdtImg-a .altImage, #asinbox ul .up-result .evt-prdtImg-a .altImage {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}
+#asinbox ul .result .evt-prdtImg-a .altImage.over, #asinbox ul .up-result .evt-prdtImg-a .altImage.over {
+    z-index: 200;
+}
+#asinbox ul .result .evt-prdtImg-a .transparentClickArea, #asinbox ul .up-result .evt-prdtImg-a .transparentClickArea {
+    height: 304px;
+    position: absolute;
+    width: 227px;
+    z-index: 400;
+}
+#asinbox ul .result .evt-prdtDesc-a, #asinbox ul .up-result .evt-prdtDesc-a {
+    display: block;
+    padding: 5px 7px 3px 8px;
+}
+#asinbox ul .result .evt-prdtDesc-a .title, #asinbox ul .up-result .evt-prdtDesc-a .title {
+    color: #000;
+    height: auto;
+    line-height: 1.25;
+    margin-bottom: -4px;
+    overflow: visible;
+}
+#asinbox ul .result .evt-prdtDesc-a .evt-priceRow, #asinbox ul .up-result .evt-prdtDesc-a .evt-priceRow {
+    margin-top: 1px;
+    text-align: left;
+}
+#asinbox ul .result .evt-prdtDesc-a .evt-priceRow .listprice, #asinbox ul .up-result .evt-prdtDesc-a .evt-priceRow .listprice {
+    color: #575656;
+    font-size: 0.6875em;
+    padding-right: 8px;
+    text-decoration: line-through;
+    vertical-align: bottom;
+}
+#asinbox ul .result .evt-prdtDesc-a .evt-priceRow .ourprice, #asinbox ul .up-result .evt-prdtDesc-a .evt-priceRow .ourprice {
+    color: black;
+    font-size: 0.8125em;
+    vertical-align: bottom;
+}
+#asinbox ul .up-result {
+    margin-bottom: 17px;
+}
+#asinbox ul .up-result a:hover .title {
+    text-decoration: none;
+}
+#asinbox ul .up-result .mask {
+    display: none;
+    height: 304px;
+    position: absolute;
+    width: 227px;
+}
+#asinbox ul .up-result .maskShade {
+    -ms-filter: "alpha(opacity=70)";
+    background-color: #fff;
+    filter: alpha(opacity=70);
+    height: 304px;
+    opacity: 0.7;
+    width: 227px;
+}
+#asinbox ul .up-result .maskText {
+    cursor: default;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 140px;
+    width: 227px;
+    z-index: 10;
+}
+#asinbox ul .up-result .maskText1 {
+    font-weight: bold;
+}
+#browseAsinGrid {
+    width: 100%;
+}
+#middle {
+    padding-top: 8px;
+    width: 100%;
+}
+#middleCenter {
+    float: right;
+    margin-right: 16px;
+    padding: 3px 0px 10px;
+}
+#middleRight {
+    float: right;
+    padding: 0px 0px 8px;
+}
+#SizeChartDiv {
+    float: right;
+    margin-right: 4px;
+    padding: 0px 0px 10px;
+}
+.ie #SizeChartDiv {
+    padding: 3px 0px 10px;
+}
+span#SizeChartLink {
+    color: #434343;
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+#top {
+    background-color: #e4e4e6;
+    border-bottom: 1px solid #e2e2e4;
+    padding: 15px 0px;
+    width: 100%;
+}
+#top .date, #top .time {
+    text-transform: uppercase;
+}
+.evt-filter-select {
+    border-color: #e9e9eb #f8f8f8 #f8f8f8 #e9e9eb;
+    border-style: solid;
+    border-width: 1px;
+    color: #3e3c3c;
+    font-size: 0.8125em;
+    margin: 0px 16px 0px 0px;
+    padding: 0px;
+}
+#backToTop {
+    background: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/back-TopLink._V162994467_.png") no-repeat scroll;
+    border: medium none;
+    bottom: 45%;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 25px;
+    width: 40px;
+    z-index: 1000;
+}
+.header {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+#startHeader {
+    color: #6b1c12;
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+#resultHeader {
+    margin-bottom: 21px;
+    margin-top: 36px;
+}
+#upcomingHeader {
+    padding-bottom: 12px;
+    padding-top: 17px;
+}
+.happeningNowHeader {
+    padding-bottom: 11px;
+    padding-top: 12px;
+}
+.happeningNowFooter {
+    margin-bottom: 26px;
+    margin-top: 16px;
+}
+.happeningNowFooter a {
+    color: #3f3f3f;
+    font-size: 14px;
+    text-decoration: none;
+}
+#bpShareOpt {
+    bottom: -1px;
+    color: #3f3f3f;
+    font-size: 0.8125em;
+    position: absolute;
+    right: 3px;
+}
+#bpShareOpt #shareHeader {
+    float: left;
+    margin-right: 6px;
+}
+#bShareOpt {
+    color: #3f3f3f;
+    float: right;
+    font-size: 0.8125em;
+    margin-top: 7px;
+}
+#bShareOpt #shareHeader {
+    float: left;
+    margin-right: 6px;
+}
+#upcomingSaleHero {
+    margin-top: 0px;
+    width: 956px;
+}
+#upcomingSaleBlurb {
+    color: #3f3f3f;
+    font-size: 14px;
+    margin-top: 30px;
+    width: 765px;
+}
+.separator {
+    border-top: 1px solid #adadad;
+    width: 100%;
+}
+.salesGroupedByDate {
+    margin-bottom: 26px;
+}
+/* detail-page */
+#detail-page {
+    background-color: white;
+    color: #7a7778;
+    height: 576px;
+    overflow: hidden;
+    position: relative;
+}
+#dpLeftCol {
+    height: 564px;
+    left: 0px;
+    padding: 12px 20px 0px 40px;
+    position: absolute;
+    top: 0px;
+    width: 205px;
+}
+#dpCenterCol {
+    height: 576px;
+    left: 251px;
+    margin: 0px 12px;
+    position: absolute;
+    top: 0px;
+    width: 430px;
+}
+#dpRightCol {
+    height: 521px;
+    margin-top: 55px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 251px;
+}
+#dpCenterCol .loading {
+    display: none;
+    height: 31px;
+    left: 0px;
+    padding: 259px 190px 286px;
+    position: absolute;
+    top: 0px;
+    width: 31px;
+    z-index: 10;
+}
+#dpCenterCol .loading canvas {
+    bottom: 15px;
+    display: block;
+    height: 31px;
+    left: 15px;
+    position: absolute;
+    width: 31px;
+    z-index: 20;
+}
+#dpCenterCol .loading canvas div {
+    height: 31px !important;
+    width: 31px !important;
+}
+#dpCenterCol .loading .background {
+    -ms-filter: "alpha(opacity=70)";
+    background: white;
+    filter: alpha(opacity=70);
+    height: 576px;
+    left: 0px;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    width: 430px;
+    z-index: 15;
+}
+#dpEventInfo {
+    font-size: 11px;
+    margin-bottom: 16px;
+}
+#dpEventInfo .date, #dpEventInfo .time {
+    text-transform: uppercase;
+}
+#dpEventInfo a {
+    color: #7a7778;
+}
+#dpProdDesc {
+    margin-bottom: 24px;
+}
+#dpAltImages {
+    padding-bottom: 20px;
+}
+#dpCenterImage {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+#dpCenterImage .largeImage, #dpCenterImage .zoomImageL1 {
+    cursor: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-in-cursor._V194296516_.bmp") 10 10, url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-in-cursor._V194296516_.bmp"), -moz-zoom-in;
+}
+.ie6 #dpCenterImage .largeImage, .ie6 #dpCenterImage .zoomImageL1 {
+    cursor: default;
+}
+.ie7 #dpCenterImage .largeImage, .ie7 #dpCenterImage .zoomImageL1 {
+    cursor: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-in-cursor._V194296516_.bmp");
+}
+.ie9 #dpCenterImage .largeImage, .ie9 #dpCenterImage .zoomImageL1 {
+    cursor: pointer;
+}
+.opr #dpCenterImage .largeImage, .opr #dpCenterImage .zoomImageL1 {
+    cursor: pointer;
+}
+#dpCenterImage .zoomImageL1, #dpCenterImage .zoomImageL2 {
+    position: absolute;
+    z-index: 10;
+}
+#dpCenterImage .zoomImageL2 {
+    cursor: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-out-cursor._V194296516_.bmp") 10 10, url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-out-cursor._V194296516_.bmp"), -moz-zoom-out;
+}
+.ie7 #dpCenterImage .zoomImageL2 {
+    cursor: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/zoom-out-cursor._V194296516_.bmp");
+}
+.ie9 #dpCenterImage .zoomImageL2 {
+    cursor: move;
+}
+.opr #dpCenterImage .zoomImageL2 {
+    cursor: move;
+}
+#innerRightCol {
+    height: 100%;
+    padding: 0px 10px 0px 20px;
+}
+#dpShareOpt {
+    bottom: 0px;
+    padding: 20px 0px 27px;
+    position: absolute;
+    z-index: 50;
+}
+#dpShareOpt #shareHeader {
+    font-size: 0.8125em;
+    margin-bottom: 4px;
+}
+.shareOpt .icon {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px;
+    cursor: pointer;
+    float: left;
+    height: 17px;
+    margin-right: 5px;
+    width: 17px;
+}
+.shareOpt .icon span {
+    left: -9999px;
+    position: absolute;
+}
+.shareOpt #shareFriends {
+    display: inline-block;
+}
+.shareOpt #shareFB .icon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/follow-facebook2._V137824610_.png");
+}
+.shareOpt #shareTW .icon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/follow-twitter2._V137824610_.png");
+}
+.shareOpt #sharePN .icon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/share-pinterest._V146237588_.png");
+}
+.shareOpt #shareFriends .icon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/share-with-friends2._V137824610_.png");
+    width: 22px;
+}
+#dpPriceRow {
+    font-size: 14px;
+    margin-top: 9px;
+}
+#dpPriceRow #ourPrice {
+    color: black;
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: -2px;
+}
+#scarcity {
+    color: #900;
+    font-size: 0.6875em;
+    height: 20px;
+    margin-top: 3px;
+    visibility: visible;
+}
+#dpFastTrack {
+    display: none;
+    margin-top: 15px;
+}
+.dpRightColLabel {
+    color: black;
+    font-size: 0.6875em;
+    font-weight: bold;
+}
+#dpFastTrack .dpRightColLabel {
+    color: #7a7778;
+    font-size: 0.8125em;
+}
+.dpRightColMessage {
+    font-size: 0.6875em;
+}
+.dpHelpLink a {
+    color: #7a7778;
+    font-weight: normal;
+    text-decoration: underline;
+}
+#dpBuyBox {
+    margin-bottom: 22px;
+}
+#listPrice {
+    text-decoration: line-through;
+}
+#pdHeader {
+    color: black;
+    font-size: 1.125em;
+}
+#brandStoryContent {
+    background-color: #bdbdbd;
+    font-size: 11px;
+    line-height: 16px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding: 10px;
+}
+#pdBrand {
+    display: none;
+}
+#pdBrandName {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+}
+#pdBrandArrow {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/arrow_hover._V180039293_.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 14px;
+}
+#pdBullets {
+    font-size: 0.75em;
+    margin-top: 14px;
+}
+#pdBullets ul {
+    margin: 10px 0px;
+    padding-left: 15px;
+}
+#pdBullets ul li.shortDesc {
+    list-style-type: none;
+    margin: 0px 0px 8px -15px;
+}
+#pdWarnings {
+    font-size: 0.75em;
+}
+#pdWarnings ul {
+    list-style: none;
+}
+#pdWarnings .warning {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/warn._V157741967_.png");
+    background-repeat: no-repeat;
+    height: 21px;
+    left: -27px;
+    margin-top: -21px;
+    position: relative;
+    top: 25px;
+    width: 23px;
+}
+#aiHeader {
+    font-size: 0.8125em;
+    margin-bottom: 6px;
+}
+#dpAltImages .videoAltButton {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/video._V183716339_.gif");
+    display: block;
+    height: 37px;
+    width: 37px;
+}
+#dpAltImages div.selected {
+    border-color: #494242 !important;
+}
+#dpAltImages div.productThumbnail {
+    border: 1px solid #7a7778;
+    float: left;
+    height: 37px;
+    margin: 0px 5px 5px 0px;
+    padding: 1px;
+    width: 37px;
+}
+.inactiveCursor {
+    cursor: not-allowed !important;
+}
+.s_bbExpChkOut, .s_bbExpChkOut_mo, .s_bbAddToCart, .s_bbAddToCart_mo, .s_bbATCProceedCheckout, .s_bbATCProceedCheckout_mo, .s_bbAddToWL, .s_bbAddToWL_mo, .s_bbReAddToWL, .s_bbReAddToWL_mo {
+    height: 23px;
+}
+.s_bbExpChkOut, .s_bbExpChkOut_mo {
+    display: none;
+    width: 165px;
+}
+.s_bbExpChkOut {
+    background-position: 0px 0px;
+}
+.s_bbExpChkOut_mo {
+    background-position: 0px -23px;
+}
+.s_bbAddToCart, .s_bbAddToCart_mo {
+    width: 117px;
+}
+.s_bbAddToCart {
+    background-position: 0px -46px;
+}
+.s_bbAddToCart_mo {
+    background-position: 0px -69px;
+}
+.s_bbATCProceedCheckout, .s_bbATCProceedCheckout_mo {
+    width: 100px;
+}
+.s_bbATCProceedCheckout {
+    background-position: 0px -92px;
+}
+.s_bbATCProceedCheckout_mo {
+    background-position: 0px -115px;
+}
+.s_bbAddToWL, .s_bbAddToWL_mo {
+    width: 151px;
+}
+.s_bbAddToWL {
+    background-position: 0px -138px;
+}
+.s_bbAddToWL_mo {
+    background-position: 0px -161px;
+}
+.s_bbReAddToWL, .s_bbReAddToWL_mo {
+    width: 171px;
+}
+.s_bbReAddToWL {
+    background-position: 0px -184px;
+}
+.s_bbReAddToWL_mo {
+    background-position: 0px -207px;
+}
+.dpSprite {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/dp-buttons-sprite-v2._V163824576_.jpg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0px 0px 17px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+.dpSprite span {
+    left: -9999px;
+    position: absolute;
+}
+#bbWarning {
+    color: #600000;
+    display: none;
+    font-size: 0.6875em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#bbAddedToCart {
+    display: none;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+#bbContent {
+    font-size: 0.8125em;
+    font-weight: bold;
+}
+#bbNote {
+    font-size: 0.6875em;
+}
+#detail-page .cl {
+    clear: both;
+}
+.varSelWarn {
+    padding: 6px;
+}
+.limitExceeded {
+    background-color: #fff;
+    font-size: 13px;
+    padding: 10px;
+}
+.n-ret-bullet, .ret-bullet {
+    font-weight: bold;
+}
+#returnPolicyBullet {
+    font-weight: bold;
+}
+#downloadFlash {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/flash-prompt._V155235943_.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 576px;
+    position: relative;
+    top: -579px;
+    width: 430px;
+}
+#dpBottomCol {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+}
+#dpProductDetails .titlesOuter {
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 40px 8px;
+    position: absolute;
+    right: 0px;
+    z-index: 25;
+}
+#dpProductDetails .titlesOuter .title {
+    color: #000;
+    cursor: default;
+    float: left;
+    font-weight: bold;
+    padding: 10px 0px 10px 5px;
+}
+#dpProductDetails .titlesOuter .title.small {
+    font-size: 0.6875em;
+}
+#dpProductDetails .titlesOuter .title.large {
+    font-size: 0.75em;
+}
+#dpProductDetails .titlesOuter .title.first {
+    padding-left: 0px;
+}
+#dpProductDetails .titlesOuter .title.last {
+    padding-right: 0px;
+}
+#dpProductDetails .titlesOuter.flyout .border {
+    border-top: 1px solid #676767;
+    opacity: 0px;
+    padding-bottom: 2px;
+}
+#dpProductDetails .titlesOuter.flyout .arrow {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/pd-arrow._V166103438_.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 6px;
+    left: 40px;
+    opacity: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 11px;
+}
+#dpProductDetails .contentOuter {
+    -moz-opacity: 0.95;
+    background-color: #dbdbdb;
+    filter: alpha(opacity=95);
+    left: 0px;
+    opacity: 0.95;
+    overflow: auto;
+    position: absolute;
+}
+#dpProductDetails .contentOuter .content {
+    color: #333;
+    float: left;
+    font-size: 0.75em;
+    overflow: auto;
+    padding: 9px 40px;
+    width: 876px;
+}
+.ie7 #dpProductDetails .titlesOuter .border, .ie7 #dpProductDetails .titlesOuter .arrow {
+    height: 0px;
+}
+.ie7 #dpProductDetails .titlesOuter.flyout .arrow {
+    height: 6px;
+}
+/* cart */
+#cartpage {
+    background-color: #fff;
+    margin: 5px 0px;
+    padding: 10px 40px 20px;
+}
+#cartpage h2 {
+    color: #7a7778;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+#cartpage p {
+    font-size: 0.85em;
+    margin-bottom: 40px;
+}
+#cartpage a {
+    display: block;
+    height: 20px;
+    text-decoration: none;
+    width: 163px;
+}
+#cartpage #continueShopping {
+    background-color: transparent;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/inca/checkout/buttons/continue-shopping._V156406310_.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 214px;
+}
+/* variationMatrix */
+div.dimension {
+    clear: both;
+    padding-bottom: 12px;
+}
+div.dimensionValuesContainer {
+    clear: both;
+}
+div.dimension h5 {
+    clear: both;
+    float: left;
+    font-weight: normal;
+    position: relative;
+}
+div.dimension-color_name h5 {
+    width: 51px;
+}
+div.dimension h5, .variationSelectOn {
+    font-size: 0.8125em;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+div.dimension select {
+    border: 1px solid black;
+    margin-top: 5px;
+}
+.variationSelectOn {
+    color: black;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 170px;
+}
+.swatchImageAvail {
+    background-position: 0px -550px;
+}
+div.dimension .swatchImageActive {
+    border: 2px solid #000 !important;
+    margin: 5px 5px 0px 0px !important;
+}
+.swatchImageAvail, .swatchImageHover, .swatchImageUnavail, .swatchImageActive, .swatchImageActiveUnavail {
+    border: 1px solid #7a7778 !important;
+    clear: none !important;
+    cursor: pointer;
+    display: block;
+    float: left !important;
+    font-size: 0.6875em;
+    height: 18px;
+    margin: 6px 6px 1px 1px !important;
+    padding: 0px !important;
+    width: 18px;
+}
+div.swatchImageUnavailHide {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/swatch-unavail._V182916061_.png");
+    height: 18px;
+    position: absolute;
+    width: 18px;
+}
+span#sizeChartLink {
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+    margin-left: 48px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+div.sizeChartTab {
+    background-color: #fff;
+    height: 375px;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+}
+div.sizeChartTab .img {
+    background: #fff no-repeat center;
+    border: 0px;
+    width: 100%;
+}
+.swatchTextAvail {
+    background-color: #fff;
+    background-position: 1px -329px;
+    color: #3a4b5a;
+}
+.swatchTextActive {
+    background-position: 1px -359px;
+    color: #fff !important;
+}
+.swatchTextActive, .swatchTextAvail, .swatchTextUnavail, .swatchTextHover, .swatchTextActiveUnavail {
+    background-repeat: no-repeat;
+    border-style: none;
+    cursor: pointer;
+    float: left;
+    font-size: 0.6875em;
+    height: 14px;
+    line-height: 13px;
+    margin: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    text-align: center;
+    width: 27px;
+}
+.swatchTextUnavail, .swatchTextUnavail:link, .swatchTextUnavail:hover, .swatchTextUnavail:visited, .swatchTextUnavail:active, .swatchTextActiveUnavail, .swatchTextActiveUnavail:link, .swatchTextActiveUnavail:hover, .swatchTextActiveUnavail:active, .swatchTextActiveUnavail:visited {
+    background-position: -49px -329px;
+    color: #aaa !important;
+    cursor: default;
+}
+/* alert */
+#cart .alertwrapper {
+    display: block;
+    float: right;
+    height: 39px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 0px;
+}
+#cart .alert {
+    background-color: #aaa;
+    color: white;
+    font-size: 0.8em;
+    height: 30px;
+    line-height: 1.2;
+    padding: 6px 12px 3px;
+    position: absolute;
+    text-align: left;
+}
+#cart .alert.counted {
+    padding-left: 29px;
+}
+#cart .alert.gif {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/orangeAlert._V169507595_.gif");
+    background-position: 8px center;
+    background-repeat: no-repeat;
+}
+#cart .alert.expiring {
+    background-color: #bf7526;
+}
+#cart .alert.waitlist-available {
+    background-color: #496c2d;
+}
+#cart .alert.new-sales {
+    cursor: pointer;
+    text-align: center;
+}
+#cart .alert canvas {
+    left: 8px;
+    position: absolute;
+    top: 12px;
+}
+#cart .alert canvas div {
+    height: 15px !important;
+    width: 15px !important;
+}
+/* amzPopover */
+.ap_popover {
+    outline: none;
+    position: absolute;
+}
+.ap_body {
+    background-color: #d3d3d3;
+    height: 100%;
+    margin: 0px;
+    padding: 10px;
+    position: relative;
+}
+.ap_popover .ap_body.no_title {
+    background-color: #939598 !important;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px !important;
+}
+#ap_overlay, #ap_overlay div {
+    background-color: #000;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.ap_popover .ap_loading {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/popover/snake._V182667648_.gif");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 48px;
+}
+.ap_popover .ap_body .ap_left-arrow, .ap_popover .ap_body .ap_right-arrow {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/popover/sprite-arrow-v-grey._V184150682_.png");
+}
+.ap_popover .ap_body .ap_left-arrow, .ap_body .ap_left {
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    height: 100%;
+    left: -17px;
+    position: absolute;
+    top: 0px;
+    width: 17px;
+}
+.ap_popover .ap_body .ap_right-arrow, .ap_body .ap_right {
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    height: 100%;
+    position: absolute;
+    right: -17px;
+    top: 0px;
+    width: 17px;
+}
+.ap_popover .ap_titlebar {
+    background-color: #d3d3d3;
+    border-bottom: 0px;
+    display: none;
+    font-size: 1.3em;
+    font-weight: normal;
+    left: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    top: 0px;
+    white-space: nowrap;
+}
+.ap_popover .ap_titlebar.multiline {
+    overflow: visible;
+    white-space: normal;
+}
+.ap_popover .ap_titlebar .ap_title {
+    margin-left: 12px;
+    overflow: hidden;
+    padding-top: 18px;
+}
+.ap_popover .ap_close {
+    position: absolute;
+    right: 0px;
+    top: 22px;
+}
+.ap_popover .ap_close a {
+    outline: none;
+    padding: 5px 0px 5px 5px;
+    text-decoration: none;
+}
+.ap_popover .ap_closebutton {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/popover/close_btn_grey._V184030871_.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 19px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 61px;
+}
+/* checkout */
+#checkoutTable.pageId4000 {
+    float: left;
+    margin-top: 62px;
+}
+#checkoutTable.pageId4000 td.leftColumn {
+    width: 364px;
+}
+#checkoutTable.pageId4000 td.centerColumn {
+    padding: 0px;
+}
+#checkoutTable.pageId4000 #right-1 img {
+    height: 423px;
+    width: 585px;
+}
+#pageId4000 #centerWrapper {
+    margin: 22px;
+}
+#pageId4000 #header {
+    text-align: left;
+}
+#pageId4000 {
+    list-style-type: none;
+}
+/* email-popover */
+div.emailPopover {
+    background-color: #fff;
+    padding: 8px 20px 13px;
+}
+div.emailPopover .sub_title {
+    padding: 5px 0px 8px;
+}
+div.emailPopover .sub_title img {
+    float: left;
+    padding-right: 4px;
+}
+div.emailPopover .sub_title h2 {
+    color: #5a5b5d;
+    font-size: 1em;
+    font-weight: normal;
+}
+div.emailPopover .sub_title div.clear {
+    clear: both;
+}
+div.emailPopover .header {
+    font-size: 0.75em;
+}
+div.emailPopover textarea {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    height: 50px;
+    margin-top: 6px;
+    width: 100%;
+}
+div.emailPopover .extraDiv {
+    margin-bottom: 20px;
+}
+div.emailPopover .extraDiv .ccMe {
+    color: #5a5b5d;
+    font-size: 0.625em;
+}
+div.emailPopover .extraDiv .ccMe input[type="checkbox"] {
+    margin: 0px 3px 0px 0px;
+    padding: 0px;
+}
+div.emailPopover .extraDiv .disclaimer {
+    font-size: 0.5625em;
+    margin: 3px 0px -10px 0px;
+    text-align: right;
+    width: 100%;
+}
+div.emailPopover .messageBody {
+    padding: 0px 0px 5px;
+}
+div.emailPopover .messageBody p {
+    color: #5a5b5d;
+    font-size: 0.6875em;
+    margin: 6px 0px;
+}
+div.emailPopover .submit {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+}
+div.emailPopover #sendEmailInvite {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/send-email-invite._V181789101_.png");
+    width: 184px;
+}
+div.emailPopover #sendShareEmail {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/send-share-email._V181789101_.png");
+    width: 94px;
+}
+div.emailPopover #submitMessage {
+    font-size: 0.875em;
+}
+div.emailPopover #submitMessage.error {
+    color: #600000;
+    margin-top: 10px;
+}
+div.emailPopover #submitMessage.success {
+    color: #006000;
+    margin-top: 10px;
+}
+div.emailPopover a {
+    color: #5a5b5d;
+    cursor: pointer;
+    font-size: 0.85em;
+    text-decoration: underline;
+}
+div.emailPopover .captcha {
+    border: 1px solid;
+    display: none;
+    font-size: 0.6875em;
+    height: 128px;
+    margin-bottom: 14px;
+    padding: 6px 1px 2px 10px;
+}
+div.emailPopover .captcha div.captchaLeft input[type="text"] {
+    height: 17px;
+    padding: 0px;
+    width: 150px;
+}
+div.emailPopover .captcha div.captchaImg img {
+    height: 55px;
+    width: 150px;
+}
+div.emailPopover .captcha p.captchaIntructions {
+    color: #5a5b5d;
+    margin: 2px 0px -2px 0px;
+}
+div.emailPopover .captcha div.captchaLeft {
+    float: left;
+    margin: 9px 0px 0px;
+    width: 100%;
+}
+div.emailPopover .captcha div.captchaImg {
+    border: 1px solid;
+    height: 56px;
+    width: 150px;
+}
+div.emailPopover .captcha div.captchaRight {
+    position: absolute;
+    width: 100%;
+}
+div.emailPopover .captcha div.captchaRight div {
+    bottom: -1px;
+    left: 157px;
+    position: absolute;
+}
+/* help */
+#help-page {
+    background-color: #fff;
+    font-size: 0.813em;
+    line-height: 1.3;
+    overflow: hidden;
+    zoom: 1;
+}
+#help-menu {
+    float: left;
+    width: 232px;
+}
+#help-menu-wrapper {
+    padding: 18px 12px 110px 43px;
+}
+#help-menu-title {
+    color: #000;
+    font-size: 1.385em;
+    margin-bottom: 12px;
+}
+#help-menu-title a {
+    color: #000;
+    text-decoration: none;
+}
+#help-menu-contents li {
+    color: #9b9a9a;
+    list-style-type: none;
+    padding: 2px 0px 1px;
+}
+#help-menu-contents a {
+    color: #9b9a9a;
+    text-decoration: none;
+}
+#help-menu-contents a:hover {
+    color: #9b9a9a;
+    text-decoration: underline;
+}
+#help-content {
+    color: #000;
+    overflow: hidden;
+    padding: 53px 175px 110px 22px;
+    zoom: 1;
+}
+#help-content.popup {
+    margin: 0px;
+    padding: 5px 10px;
+}
+#help-content a {
+    color: #9b9a9a;
+    text-decoration: none;
+}
+#help-content a:hover {
+    color: #9b9a9a;
+    text-decoration: underline;
+}
+#help-content br {
+    display: none;
+}
+#help-content ul {
+    list-style-type: none;
+    margin-top: 0.75em;
+}
+#help-content h1, #help-content h2 {
+    font-size: 1.154em;
+    font-weight: normal;
+}
+#help-content p {
+    margin: 10px 0px;
+}
+/* tabs */
+.tabs {
+    text-transform: uppercase;
+}
+.tabs ul {
+    background: A8A8A8;
+    float: left;
+}
+.tabs li {
+    background: #939598;
+    display: inline;
+    float: left;
+    font-size: 0.91em;
+    list-style: none;
+    margin-right: 2px;
+}
+.tabs ul li.active {
+    background: white;
+}
+.tabs li a {
+    color: white;
+    float: left;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+.tabs ul li.active a {
+    color: black;
+}
+.tabs .tabContent {
+    background: white;
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+/* centerStage */
+.csBtnBase {
+    background-color: white;
+    background: transparent url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/blog/lookbook/lookbook_bttns._V152769777_.png") no-repeat 0px -18px;
+}
+.csBtnAni {
+    background-color: white;
+    background: transparent url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/blog/lookbook/lookbook_bttns._V152769777_.png") no-repeat bottom right;
+}
+.csBtnClkHov {
+    background-color: white;
+    background: transparent url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/blog/lookbook/lookbook_bttns._V152769777_.png") no-repeat 0px -36px;
+}
+.csButtonPanel .last {
+    margin-right: 0px;
+}
+.csButtonPanel {
+    bottom: 10px;
+    height: 16px;
+    left: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+}
+.csButtonPanel.shift {
+    margin-right: -235px;
+    right: 50%;
+}
+.csBtnContain {
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    margin-right: 3px;
+    position: relative;
+    width: 16px;
+}
+.csBtnContain.selected {
+    cursor: default;
+}
+.csBtnBase {
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 16px;
+    z-index: 110;
+}
+.csBtnAni {
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+    z-index: 120;
+}
+.csBtnClkHov {
+    height: 16px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+    width: 16px;
+    z-index: 130;
+}
+.csBtnNum {
+    color: #001271;
+    font-size: 10px;
+    height: 16px;
+    left: 0px;
+    line-height: 16px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 16px;
+    z-index: 140;
+}
+.csPanel .corner {
+    display: block;
+    height: 6px;
+    overflow: hidden;
+    position: absolute;
+    width: 6px;
+}
+#cs {
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+#cs .loading {
+    position: absolute;
+}
+#csPanels {
+    position: relative;
+}
+#csPanels .csPanel {
+    background-color: #fff;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+    width: 100%;
+}
+#cs .tcg, #cs div.unified_widget {
+    margin: 0px;
+}
+.csPanel .ke {
+    display: none;
+}
+.ie DIV#centerWrapper DIV .csBtnNum {
+    text-align: center;
+}
+/* referrals-invite */
+#referralInvitePopup {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/referral_bg._V397383097_.jpg");
+    height: 556px;
+    margin-top: -10px;
+    width: 836px;
+}
+#referralLoadingSpinner {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 24px;
+}
+#referralFormContent {
+    float: left;
+}
+#referralFormContent .invContentBody {
+    vertical-align: 2px;
+}
+#referralFormContent input {
+    margin-left: 15px;
+    margin-right: 0px;
+}
+#referralCompleteContShoppingContainer {
+    clear: both;
+    padding-top: 10px;
+}
+#referralCompleteReferMoreContainer {
+    float: left;
+    height: 23px;
+}
+#referralLoadingSpinner.referralSpinnerPositionCenter {
+    margin-left: 250px;
+    padding-top: 270px;
+}
+#referralInviteForm, #referralError {
+    clear: both;
+    padding-left: 20px;
+    width: 460px;
+}
+#referralError, #referrerIDError {
+    padding-top: 15px;
+}
+#referralEmailAddressError {
+    display: none;
+    padding-bottom: 20px;
+}
+#referralInvitePopup .invContentError {
+    color: #900;
+    font-size: 13px;
+}
+img#referralInviteHeaderImg {
+    height: 34px;
+    margin-bottom: 20px;
+    width: 240px;
+}
+#referralInviteForm .separator, #referralInviteForm hr {
+    border: "1px solid #5a5b5d";
+    margin: 24px 0px;
+}
+#referralInviteForm .invContentHeading {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+#referralInviteForm .invContentBody {
+    color: #000;
+    font-size: 13px;
+}
+#referralInviteForm .invContentInput {
+    margin-bottom: 10px;
+}
+#referralInviteForm .invContentEmails {
+    height: 5em;
+    resize: none;
+    width: 450px;
+}
+#referralInviteForm .invContentText {
+    margin-top: 12px;
+}
+#referralInviteForm .invContentImg {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px none;
+    cursor: pointer;
+}
+#referralLink {
+    height: 20px;
+    width: 370px;
+}
+#referralInviteForm p.invContentDisclaimer {
+    color: #000;
+    font-size: 10px;
+    padding-right: 155px;
+}
+#referralStateInput {
+    padding-bottom: 24px;
+    padding-top: 10px;
+}
+#referralStateSubmit {
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+    width: 38px;
+}
+#referralInviteForm .referralStateSubmitInActive {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/go_btn_grey._V147438835_.png");
+    cursor: auto;
+}
+#referralInviteForm .referralStateSubmitActive {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/go_btn._V143558239_.png");
+}
+#referralFormSubmit {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/invite_friends_btn._V143558239_.png");
+    float: left;
+    height: 21px;
+    width: 117px;
+}
+#referralMoreSubmit {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/invite_more_friends_btn._V143558239_.png");
+    float: left;
+    height: 21px;
+    width: 161px;
+}
+#referralContinueShopping {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/continue_shopping_btn._V143558236_.png");
+    display: block;
+    height: 21px;
+    width: 161px;
+}
+#referrerIDError #referralContinueShopping {
+    display: block;
+    margin-top: 20px;
+}
+#referralInviteForm .socialIcon {
+    display: inline-block;
+    line-height: 26px;
+    margin-top: 10px;
+    padding-left: 32px;
+    text-decoration: none;
+}
+#referralInviteForm .facebookIcon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/invite_fb_btn._V147363216_.png");
+    margin-right: 24px;
+}
+#referralInviteForm .twitterIcon {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/invite_twitter_btn._V147363216_.png");
+}
+#referralDisclaimer {
+    bottom: 0px;
+    color: #939598;
+    font-size: 10px;
+    left: 30px;
+    margin-bottom: 14px;
+    position: absolute;
+}
+#referralDisclaimer a {
+    color: #939598;
+}
+/* join */
+#join {
+    height: 75px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: right;
+}
+#join_left {
+    float: left;
+    font-size: 75%;
+    margin-left: 60%;
+    width: 20%;
+}
+#join_right {
+    float: right;
+    font-size: 65%;
+    line-height: 2;
+    width: 180px;
+}
+#join_right a {
+    color: #7a7778;
+}
+/* shoveler */
+.shoveler {
+    left: 0px;
+    margin-top: 0px;
+    position: relative;
+}
+.shoveler .viewport {
+    overflow: hidden;
+    position: relative;
+}
+.shoveler .viewport .slider {
+    left: 0px;
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+}
+.shoveler .viewport .slider .item {
+    display: inline-table;
+}
+.ie7 .shoveler .viewport .slider .item {
+    display: inline;
+    zoom: 1;
+}
+.shoveler .viewport .pagination {
+    color: #7a7778;
+    font-size: 0.6875em;
+    padding: 0px 0px 3px;
+    position: relative;
+}
+.shoveler .prev, .shoveler .next {
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/images/shoveler_arrow_sprite._V392213655_.png");
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+}
+.shoveler .prev.small, .shoveler .next.small {
+    height: 48px;
+    width: 32px;
+}
+.shoveler .prev.large, .shoveler .next.large {
+    height: 75px;
+    width: 49px;
+}
+.shoveler .prev {
+    left: 0px;
+}
+.shoveler .prev.large {
+    background-position: 0px -75px;
+}
+.shoveler .prev.large.active {
+    background-position: 0px 0px;
+}
+.shoveler .prev.small {
+    background-position: 0px -348px;
+}
+.shoveler .prev.small.active {
+    background-position: 0px -300px;
+}
+.shoveler .next {
+    right: 0px;
+}
+.shoveler .next.large {
+    background-position: 0px -225px;
+}
+.shoveler .next.large.active {
+    background-position: 0px -150px;
+}
+.shoveler .next.small {
+    background-position: 0px -444px;
+}
+.shoveler .next.small.active {
+    background-position: 0px -396px;
+}
+/* happeningSales */
+.happeningSalesShoveler .shoveler {
+    background-color: transparent;
+}
+#happeningNowSalesContent .happeningNowHeader {
+    padding-bottom: 11px;
+    padding-top: 12px;
+}
+.happeningSalesShoveler .slider {
+    height: 288px;
+}
+.happeningSalesShoveler .item {
+    padding-right: 10px;
+    width: 312px;
+}
+.happeningSalesShoveler .privatesale {
+    border: 3px none;
+    height: 219px;
+    max-height: 255px;
+    padding-left: 0px;
+    white-space: normal;
+    width: 312px;
+}
+.happeningSalesShoveler .image img {
+    height: 219px;
+    width: 312px;
+}

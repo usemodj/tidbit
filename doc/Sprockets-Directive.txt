@@ -1,0 +1,57 @@
+
+Supported Comment Types
+
+The directive processor understands comment blocks in three formats:
+
+/* Multi-line comment blocks (CSS, SCSS, JavaScript)
+ *= require foo
+ *= require_tree ./subpath
+ *= require_directory ./subdir
+ */
+
+// Single-line comment blocks (SCSS, JavaScript)
+//= require foo
+
+# Single-line comment blocks (CoffeeScript)
+#= require foo
+
+
+= Sprockets Directives
+You can use the following directives to declare dependencies in asset source files.
+
+For directives that take a path argument, you may specify either a logical path or a relative path. Relative paths begin with ./ and reference files relative to the location of the current file.
+
+== The require Directive
+
+require path inserts the contents of the asset source file specified by path. If the file is required multiple times, it will appear in the bundle only once.
+
+== The include Directive
+
+include path works like require, but inserts the contents of the specified source file even if it has already been included or required.
+
+== The 'require_directory' Directive
+
+require_directory path requires all source files of the same format in the directory specified by path. 
+Files are required in alphabetical order.
+
+== The 'require_tree' Directive
+
+require_tree path works like require_directory, 
+but operates recursively to require all files in all subdirectories of the directory specified by path.
+
+== The 'require_self' Directive
+
+require_self tells Sprockets to insert the body of the current source file 
+before any subsequent require or include directives.
+
+== The 'depend_on' Directive
+
+depend_on path declares a dependency on the given path without including it in the bundle. 
+This is useful when you need to expire an asset's cache in response to a change in another file.
+
+== The 'stub' Directive
+
+stub path allows dependency to be excluded from the asset bundle. 
+The path must be a valid asset and may or may not already be part of the bundle. 
+Once stubbed, it is blacklisted and can't be brought back by any other require.
+
