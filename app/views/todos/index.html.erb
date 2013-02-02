@@ -36,8 +36,8 @@
     <div class="view">
       <input class="toggle" type="checkbox" {{#if done}} checked="checked" {{/if}}/>
       <label>{{ content }}</label> 
-      <abbr style="border-bottom:none" class="timeago date" title="{{updated_at}}">{{updated_at}}</abbr>
-      <span class="date" data-livestamp="{{updated_at}}"></span>
+      <abbr style="border-bottom:none" class="timeago date" title="{{created_at}}">{{created_at}}</abbr>
+      <span class="date" data-livestamp="{{created_at}}"></span>
       <a class="destroy"></a>
     </div>
     <input class="edit" type="text" value="{{ content }}" />
@@ -50,14 +50,3 @@
     <div id="todo-count"><b>{{remaining}}</b> {{#if_eq remaining compare= 1}} item {{else}} items {{/if_eq}} left</div>
   </script>
 
-<script type="text/javascript">
-$(function() {
-  $("#todo-list").sortable({
-    helper: 'clone',
-    cursor: 'move',
-    tolerance: 'pointer'
-  });
-  $("#todo-list").selectable();
-  $("#todo-list").disableSelection();
-});
-</script>

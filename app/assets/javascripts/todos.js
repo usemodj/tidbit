@@ -121,6 +121,8 @@ $(function(){
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       this.$el.toggleClass('done', this.model.get('done'));
+      this.$el.attr('id_order', this.model.get('id') + ':'+ this.model.get('order'));
+      
       this.input = this.$('.edit');
       return this;
     },
@@ -179,7 +181,8 @@ $(function(){
     events: {
       "keypress #new-todo":  "createOnEnter",
       "click #clear-completed": "clearCompleted",
-      "click #toggle-all": "toggleAllComplete"
+      "click #toggle-all": "toggleAllComplete",
+      "update-sort": 	"updateSort"
     },
 
     // At initialization we bind to the relevant events on the `Todos`
@@ -198,7 +201,7 @@ $(function(){
       this.main = $('#main');
 
       Todos.fetch();
-    },
+	},
 
     // Re-rendering the App just means refreshing the statistics -- the rest
     // of the app doesn't change.
@@ -226,13 +229,13 @@ $(function(){
       // reverse order
       this.$("#todo-list").prepend(view.render().el);
     },
-    append: function(todo){
+    appendOne: function(todo){
     	var view = new TodoView({model: todo});
        this.$("#todo-list").append(view.render().el);    	
     },
     // Add all items in the **Todos** collection at once.
     addAll: function() {
-      Todos.each(this.append, this);
+      Todos.each(this.appendOne, this);
     },
 
     // If you hit return in the main input field, create new **Todo** model,
@@ -254,11 +257,50 @@ $(function(){
     toggleAllComplete: function () {
       var done = this.allCheckbox.checked;
       Todos.each(function (todo) { todo.save({'done': done}); });
+    },
+    
+    updateSort: function(event, model, position){
+    	var orders = [],ids = [];
+    	this.$('#todo-list li').each( function(index, el){
+    	    //console.log(el);
+    	    var arr = $(el).attr('id_order').split(':');
+    	    ids.push( arr[0]);
+    	    orders.push(arr[1]);
+    	});
+		orders.sort(function(a, b){return b - a});
+    	//console.log(orders);
+    	//console.log(ids);
+    	$(ids).each( function(index, id){
+    	    Todos.get(id).set({'order': orders[index]}).save();
+    	});
+    	
     }
-
   });
 
   // Finally, we kick things off by creating the **App**.
   var App = new AppView;
-  	
+
+	// jquery sortable
+/*	$("#todo-list").sortable({
+		helper: 'clone',
+		cursor: 'move',
+		tolerance: 'pointer',
+        stop: function(event, ui) {
+           var idOrder = ui.item.attr('id_order');
+           ui.item.trigger('update-sort', ui.item.index());
+        }
+	});
+	//$("#todo-list").disableSelection();
+*/ 
+    $('#todo-list').sortable({
+        stop: function(event, ui) {
+           var idOrder = ui.item.attr('id_order');
+           //console.log(ui.item);
+           //console.log(ui.item.index());
+           //console.log(idOrder);
+           //ui.item.trigger('drop', ui.item.index());
+           ui.item.trigger('update-sort', ui.item.index());
+        }
+    });
+  	$("#todo-list").disableSelection();
 });
