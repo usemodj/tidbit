@@ -6,8 +6,16 @@ Tidbit::Application.routes.draw do
   end
   resources :roles
 
-  devise_for :users
+#  devise_for :users
+  devise_for :users, :controllers => {sessions: 'user/sessions',registrations: 'user/registrations',
+                          passwords: 'user/passwords'}
 
+#  as :user do
+#    get 'signin' => 'devise/sessions#new', :as => :new_user_session
+#    post 'signin' => 'devise/sessions#create', :as => :user_session
+#    delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+#  end
+  
   get "/home/index"
   post "/home/index"
   get "/home/backbone_view"

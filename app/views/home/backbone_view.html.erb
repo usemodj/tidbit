@@ -1,17 +1,42 @@
+ <style>
+div {
+	/* jQuery.animate require position */
+	position:relative;
+	background-color:#abc;
+	left:50px;
+	width:90px;
+	height:90px;
+	margin:5px;
+}
+</style>
+
 <script>
 $(document).ready( function(){
-var ItemView = Backbone.View.extend({
-  tagName: 'li'
-});
-
-var BodyView = Backbone.View.extend({
-  el: 'body'
-});
-
-var item = new ItemView();
-var body = new BodyView();
-
-alert(item.el + ' ' + body.el);		
+	var ItemView = Backbone.View.extend({
+	  tagName: 'li'
+	});
+	
+	var BodyView = Backbone.View.extend({
+	  el: 'body'
+	});
+	
+	var item = new ItemView();
+	var body = new BodyView();
+	
+	console.log(item.el);
+	console.log(body.el);	
+	
+	$("#right").click(function(){
+		$("div").animate({left:"+=40"}, 300);
+		$("div").animate({left: "-=40"}, 300);
+		$("#userapp").animate({left: "+=40"}, 300);
+		$("#userapp").animate({left: "-=40"}, 300);
+		console.log("...animate...")
+	});
+	
 });
 
 </script>
+  <button id="left">&laquo;</button> <button id="right">&raquo;</button>
+  
+<div ><h2 id="userapp">Hello, Shake Me</h2></div>

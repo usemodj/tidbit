@@ -9,12 +9,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%#= current_user ? link_to('Logout', destroy_user_session_path,:method => :delete) : 
-		link_to('Login', new_user_session_path) %>
-<ul class="hmenu">
-  <%= render 'devise/menu/registration_items' %>
-  <%= render 'devise/menu/login_items' %>
-</ul>		
 <%= yield %>
 
 </body>

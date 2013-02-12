@@ -6,7 +6,7 @@ class TodosController < ApplicationController
   # GET /todos
   # GET /todos.json
   def index
-    @todos = Todo.all
+    @todos = Todo.all #Todo.page(params[:page]).per(3)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,3 +1,103 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #eeeeee;
+	color: #333333;
+	width: 520px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+#userapp {
+  position:relative;
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	z-index: 999;
+}
+
+#userapp h2 {
+	font-size: 18px;
+	line-height:1.4em;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+
+#userapp input[type="email"],
+#userapp input[type="password"] {
+	width: 300px;
+	font-size: 16px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+#user-tabs .nav-tabs li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+#user-tabs .nav-tabs li a {
+	font: 1.2em bold serif;
+}
+
+#user-tabs .nav-tabs li a,
+#user-tabs .nav-tabs a:visited {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+	color: #333;
+}
+
+#user-tabs .nav-tabs li.active,
+#user-tabs .nav-tabs li a:hover {
+	background-color: #ddd;
+	color: #fff;
+}
+#tab-content {
+	width: 380px;
+	clear:both;
+	background-color:#ddd;
+	padding: 13px 13px;
+}
+
+input.error { border: 2px solid red; }
+input[type=submit] {
+  float: center;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+}

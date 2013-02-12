@@ -65,7 +65,8 @@ $(function(){
 
     // Filter down the list to only todo items that are still not finished.
     remaining: function() {
-      return this.without.apply(this, this.done());
+	//return this.without(this.done()[0],this.done()[1], ...);
+	return this.without.apply(this, this.done());
     },
 
     // We keep the Todos in sequential order, despite being saved by unordered
@@ -130,6 +131,14 @@ $(function(){
     // Toggle the `"done"` state of the model.
     toggleDone: function() {
       this.model.toggle();
+      //console.log(this.$el);
+      if(this.model.get("done")){
+      	this.$el.hide("highlight", { direction: "down" }, 2000);
+      	App.addOne(this.model);
+      }else {
+      	this.$el.hide("highlight", { direction: "up" }, 2000);
+       	App.appendOne(this.model);
+      }
     },
 
     // Switch this view into `"editing"` mode, displaying the input field.
@@ -198,8 +207,9 @@ $(function(){
       this.listenTo(Todos, 'all', this.render);
 
       this.footer = this.$('footer');
-      this.main = $('#main');
-
+      this.main = this.$('#main');
+	  this.completed = this.$('#completed');
+	  
       Todos.fetch();
 	},
 
@@ -213,9 +223,11 @@ $(function(){
         this.main.show();
         this.footer.show();
         this.footer.html(this.statsTemplate({done: done, remaining: remaining}));
+        this.completed.show();
       } else {
         this.main.hide();
         this.footer.hide();
+        this.completed.hide();
       }
 
       this.allCheckbox.checked = !remaining;
@@ -227,11 +239,18 @@ $(function(){
       var view = new TodoView({model: todo});
       //this.$("#todo-list").append(view.render().el);
       // reverse order
-      this.$("#todo-list").prepend(view.render().el);
+      // console.log(todo.get("done"));
+      if(todo.get("done"))
+      	this.$("#todo-completed").prepend(view.render().el);
+      else 
+      	this.$("#todo-list").prepend(view.render().el);
     },
     appendOne: function(todo){
     	var view = new TodoView({model: todo});
-       this.$("#todo-list").append(view.render().el);    	
+    	if(todo.get("done"))
+       	this.$("#todo-completed").append(view.render().el);    	
+       else
+       	this.$("#todo-list").append(view.render().el);
     },
     // Add all items in the **Todos** collection at once.
     addAll: function() {
@@ -256,7 +275,23 @@ $(function(){
 
     toggleAllComplete: function () {
       var done = this.allCheckbox.checked;
-      Todos.each(function (todo) { todo.save({'done': done}); });
+      //Todos.each(function(todo){todo.save({'done': done})});
+      Todos.each(function(todo) { 
+      	if(done && !todo.get("done")){
+      		todo.save({'done': done});
+      		//console.log(this.$("#todo-list li"));
+      		this.$("#todo-list li").each(function(index, elm){
+      		    var $elm = $(elm);
+      		    console.log($elm);
+      		    //console.log($elm.attr("id_order"));
+      		    if($elm.attr("id_order") == todo.get("id")+':'+todo.get("order")){
+  			$elm.hide("highlight", 2000);
+      		    }
+      		}); 
+      		App.addOne(todo);
+      	}
+      });
+      
     },
     
     updateSort: function(event, model, position){
@@ -273,7 +308,6 @@ $(function(){
     	$(ids).each( function(index, id){
     	    Todos.get(id).set({'order': orders[index]}).save();
     	});
-    	
     }
   });
 
@@ -281,19 +315,11 @@ $(function(){
   var App = new AppView;
 
 	// jquery sortable
-/*	$("#todo-list").sortable({
-		helper: 'clone',
-		cursor: 'move',
-		tolerance: 'pointer',
-        stop: function(event, ui) {
-           var idOrder = ui.item.attr('id_order');
-           ui.item.trigger('update-sort', ui.item.index());
-        }
-	});
-	//$("#todo-list").disableSelection();
-*/ 
-    $('#todo-list').sortable({
-        stop: function(event, ui) {
+    $('#todo-list, #todo-completed').sortable({
+    	distance: 15,
+    	connectWith: ".connectedSortable",
+    	items: "li:not(.ui-state-disabled)",
+       stop: function(event, ui) {
            var idOrder = ui.item.attr('id_order');
            //console.log(ui.item);
            //console.log(ui.item.index());
@@ -301,6 +327,5 @@ $(function(){
            //ui.item.trigger('drop', ui.item.index());
            ui.item.trigger('update-sort', ui.item.index());
         }
-    });
-  	$("#todo-list").disableSelection();
+    }).disableSelection();
 });

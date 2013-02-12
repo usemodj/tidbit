@@ -20,6 +20,7 @@
 //= require json2
 //= require underscore-min
 //= require backbone-min
+//= require backbone_rails_sync
 // require backbone.localStorage
 // require backbone-localstorage
 //= require handlebars-1.0.rc.1.min
@@ -42,6 +43,17 @@
 //require_tree .
 //= require_tree ./backbone
 
+// Rails CSRF Protection
+$(document).ajaxSend(function (e, xhr, options) {
+  var token = $("meta[name='csrf-token']").attr("content");
+  xhr.setRequestHeader("X-CSRF-Token", token);
+});
+
+// Underscore.js Template Settings
+_.templateSettings = {
+    interpolate: /\{\{\=(.+?)\}\}/g,
+    evaluate: /\{\{(.+?)\}\}/g
+};
 
 //Backbone.history.start()
 

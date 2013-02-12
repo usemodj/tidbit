@@ -3,7 +3,7 @@ class Admin::UsersController < Admin::BaseController
   # GET /admin/users
   # GET /admin/users.json
   def index
-    @admin_users = User.all.page(params[:page])
+    @admin_users = User.page(params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

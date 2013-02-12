@@ -9,14 +9,21 @@
     <section id="main">
       <input id="toggle-all" type="checkbox">
       <label for="toggle-all">Mark all as complete</label>
-      <ul id="todo-list"></ul>
+      <ul id="todo-list" class="connectedSortable"></ul>
     </section>
 
     <footer>
       <a id="clear-completed">Clear completed</a>
       <div id="todo-count"></div>
     </footer>
-
+	<br/>
+    <section id="completed">
+      <label class="ui-state-disabled"> Todo Completed </label>
+      <ul id="todo-completed" class="connectedSortable">
+      </ul>
+    </section>
+	<%#= paginate @todos %>
+	<%#= page_entries_info @todos %>
   </div>
 
   <div id="instructions">

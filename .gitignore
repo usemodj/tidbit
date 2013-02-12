@@ -16,3 +16,4 @@
 *.class
 *.pyc
 *.pyo
+config/initializers/setup_mail.rb
